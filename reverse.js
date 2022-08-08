@@ -5,9 +5,9 @@ console.log(text.length); */
 /* function reverseString(text){
     let reverse = '';
     for(let i = text.length - 1; i >=0; i--){
-        var element = text[i];
+        let element = text[i];
         reverse = reverse + element;
-        console.log(element,  reverse);
+        // console.log(element,  reverse);
     }
     return reverse;
 }
