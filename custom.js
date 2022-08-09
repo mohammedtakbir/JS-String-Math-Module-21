@@ -1,39 +1,34 @@
 // * toUpperCase() & toLowerCase()
-/* let userName = 'mohammedTakbir';
-let userInput = 'mohammedTaKbir';
+/* const userName = 'mohammedTakbir';
+const userInput = 'mohammedTaKbir';
 if(userName.toLowerCase() === userInput.toLowerCase()){
-    console.log('valid user');
+    console.log('valid user')
 }
 else{
-    console.log('invalid user');
+    console.log('invalid user')
 }
-console.log(userName.toLocaleUpperCase()); */
+console.log(userName.toLocaleUpperCase());
 
 // * fibo
-/* let fibo = [0, 1];
-for(let i=2; i<=20; i++){
+const fibo = [0, 1];
+for(let i=2; i <= 20; i++){
     fibo[i] = fibo[i-1] + fibo[i-2];
-    console.log(fibo[i]);
+    console.log(fibo[i])
 }
-console.log(fibo);
+console.log(fibo)
  */
-
 // * includes()
 /* const lyrics = 'tumi bondhu kala paKhi ami jeno kiiiii.bosonto kale tomay bolte parini.shada shada kala kala';
-const search = 'paKhi';
-const searchLowerCase = search.toLowerCase();
-const lyricsLowerCase = lyrics.toLowerCase();
-const doesExist = lyricsLowerCase.includes(searchLowerCase);
-console.log(doesExist); */
+const age = [23, 44, 34, 56, 18, 41]
+console.log(age.includes(44)); */
 
 // * IndexOf()
 /* const lyrics = 'tumi bondhu kala paKhi ami jeno kiiiii.bosonto kale tomay bolte parini.shada shada kala kala';
-// console.log(lyrics.indexOf('ami'))
 if(lyrics.indexOf('paKhi') !== -1){
-    console.log('exist');
+    console.log('exist')
 }
 else{
-    console.log("dosen't exist");
+    console.log("dosen't exist")
 } */
 
 // * stratsWith() & endsWith()
@@ -44,10 +39,16 @@ console.log(lyrics.endsWith('Kala')); */
 // * split() & join()
 /* const lyrics = 'tumi bondhu kala paKhi ami jeno kiiiii.bosonto kale tomay bolte parini.shada shada kala kala';
 console.log(lyrics);
-const splitLyrics = lyrics.split(' ');
-console.log(splitLyrics);
-const joinLyrics = splitLyrics.join(' ');
-console.log(joinLyrics); */
+console.log(lyrics.split('.')); */
+
+// ? join
+/* const line =[
+    'tumi bondhu kala paKhi ami jeno ki',
+    'bosontokale tomay bolte parini',
+    'sada sada kala'
+  ]
+  console.log(line);
+  console.log(line.join('. ')) */
 
 // * slice()
 /* const lyrics = 'tumi bondhu kala paKhi ami jeno kiiiii.bosonto kale tomay bolte parini.shada shada kala kala';
@@ -78,88 +79,83 @@ else{
 console.log(Math.max(...number)); */
 
 // * write a function to get the heighest number in an array
-
 // ? approach one
 /* let heights = [167, 190, 120, 165, 137];
 let heighestNumber = Math.max(...heights);
 console.log(heighestNumber); */
 
 // ? approach two
-
-/* function findHeighest(numbers){
-    let largest = numbers[0];
+/* let heights = [167, 190, 120, 165, 137];
+function findHeighestNumber(numbers){
+    let heighest = numbers[0];
     for(let i=0; i<numbers.length; i++){
         let element = numbers[i];
-        if(element > largest){
-            largest = element
+        if(element > heighest){
+            heighest = element;
         }
-        console.log(largest);
     }
-    return largest;
+    return heighest;
 }
-let heights = [167, 190, 120, 165, 137];
-let printHeighestNumber = findHeighest(heights);
+let printHeighestNumber = findHeighestNumber(heights);
 console.log(printHeighestNumber); */
 
 // * write a function to get the lowest number in an array
-
-/* function findLowest(numbers){
-    let i = 0;
+/* let heights = [167, 190, 120, 165, 137, 110];
+function lowestNumber(numbers) {
     let lowest = numbers[0];
-    while(i<numbers.length){
+    let i = 0;
+    while (i < numbers.length) {
         let element = numbers[i];
-        if(element < lowest){
-            lowest = element
+        if (element < lowest) {
+            lowest = element;
         }
         i++
     }
+
     return lowest;
 }
-
-let heights = [167, 190, 120, 165, 137];
-const pirntLowestNumber = findLowest(heights);
-console.log(pirntLowestNumber); */
+let printLowestNumbers = lowestNumber(heights);
+console.log(printLowestNumbers); */
 
 // * reverse the character
-/* function reverseCharacter(text){
+/* function reverse(text){
     let reverse = '';
-    for( let i = text.length - 1; i>=0; i--){
+    for(i = text.length - 1; i>=0; i--){
         let element = text[i];
         reverse += element;
-        console.log(element);
     }
-    return reverse;
+    return reverse
 }
-
 const myString = 'i am a good person';
-const printReverseCharacter = reverseCharacter(myString);
-console.log(printReverseCharacter); */
+const printReverseCharacters = reverse(myString);
+console.log(printReverseCharacters); */
 
 // * reverse the words
-function reverseWords(text){
+/* function reverseWords(text){
     let words = text.split(' ');
-    let i = words.length - 1;  
-    let reverse = []; 
+    let i = words.length - 1;
+    let reverse = [];
     while(i >=0){
         let element =words[i];
         // reverse = reverse + element;
         reverse.push(element)
         i--;
     }
-    let WordsJoin = reverse.join(' ');
-    return WordsJoin;
+    // let WordsJoin = reverse.join(' ');
+    // return WordsJoin;
+    return reverse;
 }
-
-
-
-
-
-
-
 const myString = 'i am a good person';
 let printReverseWords = reverseWords(myString);
-console.log(printReverseWords);
+console.log(printReverseWords); */
 
 
-
+// * temp
+/* let first = 5;
+let second = 7;
+console.log(first, second);
+let temp = first
+first = second
+second = temp
+console.log(first, second); */
 
