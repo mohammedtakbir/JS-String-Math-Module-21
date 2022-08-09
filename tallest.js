@@ -23,7 +23,7 @@ let tallest = heightsInArray(heights);
 console.log(tallest); */
 
 // * write a function to get the lowest number in an array
-let heights = [167, 190, 120, 165, 137];
+/* let heights = [167, 190, 120, 165, 137];
 function lowestInArray(numbers){
     let i=0;
     let lowest = numbers[0];
@@ -37,6 +37,10 @@ function lowestInArray(numbers){
     return lowest;
 }
 let lowestArray = lowestInArray(heights);
-console.log(lowestArray);
+console.log(lowestArray); */
 
 
+let heights = [167, 190, 120, 165, 137];
+let change =  heights[heights.length - 1] = 6;
+console.log(change);
+console.log(heights);

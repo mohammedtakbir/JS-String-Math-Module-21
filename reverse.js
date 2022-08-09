@@ -28,7 +28,6 @@ function reversWord(text){
     return reversed;
 }
 
-
 let myText = 'i am a good person';
 let reversed = reversWord(myText);
 console.log(reversed);
