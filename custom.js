@@ -32,9 +32,9 @@ else{
 } */
 
 // * stratsWith() & endsWith()
-/* const lyrics = 'tumi bondhu kala paKhi ami jeno kiiiii.bosonto kale tomay bolte parini.shada shada kala kala';
-console.log(lyrics.startsWith('tumi'));
-console.log(lyrics.endsWith('Kala')); */
+const lyrics = 'TUMI bondhu kaLa paKhi ami jeno kiiiii.bosonto kale tomay bolte parini.shada shada kala KALA';
+// console.log(lyrics.startsWith('tumi'));
+console.log(lyrics.toLowerCase().endsWith('kala'));
 
 // * split() & join()
 /* const lyrics = 'tumi bondhu kala paKhi ami jeno kiiiii.bosonto kale tomay bolte parini.shada shada kala kala';

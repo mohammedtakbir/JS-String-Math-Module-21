@@ -6,11 +6,11 @@ let second = 7;
 // first = second;
 // second = first;
 // * approach 1
-/* let temp = first;
+let temp = first;
 first = second;
 second = temp;
-console.log(first, second); */
+console.log(first, second);
 
 // * appraoch 2 destructuring
-[ first, second ] = [ second, first ];
-console.log(first, second);
+/* [ first, second ] = [ second, first ];
+console.log(first, second); */
